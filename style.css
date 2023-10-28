@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: radial-gradient(#111, #071a1a);
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* menu */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    list-style: none;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-item:hover a {
+    color: #29a396;
+    transition: 0.3s linear;
+}
+
+.nav-item:last-of-type {
+    margin-right: 0;
+}
+
+.active {
+    color: #29a396 !important;
+}
+
+/* header  */
+.header,
+.section {
+    width: 100%;
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+.menu {
+    width: 100%;
+    background: linear-gradient(to right, #0e0e0e 70%, #142d2a);
+    padding: 20px 0;
+}
+
+.flex2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+}
+
+.header h1 {
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.mb {
+    margin-bottom: 30px;
+}
+
+span {
+    color: #29a396;
+}
+
+img {
+    height: 300px;
+
+    border-radius: 32% 68% 73% 27% / 72% 58% 42% 28%;
+}
+
+.text a {
+    text-decoration: none;
+    color: white;
+    background-color: #29a396;
+    border-radius: 40px;
+    padding: 10px 28px;
+    display: inline-block;
+    font-weight: 400;
+}
+
+.text a:hover {
+    background: #165f56;
+    transition: 0.3s linear;
+}
+
+/* why us  */
+.section {
+    background: #1d1f1e;
+    position: relative;
+    padding: 80px 0;
+}
+
+.flex3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+}
+
+.secondary {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.tertiary {
+    font-size: 15px;
+}
+
+
+/* explore */
+.section:nth-child(even) {
+    background: #141615;
+}
+
+/* trainer  */
+.gradient-cards {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    gap: 32px;
+    padding: 30px;
+
+    @media screen and (max-width: 991px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.container-title {
+    text-align: center;
+    padding: 0 !important;
+    margin-bottom: 40px;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 60px;
+}
+
+.card {
+    max-width: 550px;
+    border: 0;
+    width: 100%;
+    margin-inline: auto;
+}
+
+.container-card {
+    position: relative;
+    border: 2px solid transparent;
+    background: linear-gradient(71deg, #080509, #1a171c, #080509);
+    background-clip: padding-box;
+    border-radius: 45px;
+    padding: 40px;
+
+    img {
+        margin-bottom: 32px;
+    }
+}
+
+.bg-green-box,
+.bg-white-box,
+.bg-yellow-box,
+.bg-blue-box {
+    position: relative;
+}
+
+.bg-green-box::after,
+.bg-white-box::after,
+.bg-yellow-box::after,
+.bg-blue-box::after {
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    content: "";
+    z-index: -1;
+    border-radius: 45px;
+}
+
+.bg-green-box::after {
+    background: linear-gradient(71deg, #0d1212, #3da077, #0d1212);
+}
+
+.bg-white-box::after {
+    background: linear-gradient(71deg, #121013, #b0afb0, #121013);
+}
+
+.bg-yellow-box::after {
+    background: linear-gradient(71deg, #110e0e, #afa220, #110e0e);
+}
+
+.bg-blue-box::after {
+    background: linear-gradient(71deg, #0c0a0e, #5f6fad, #0c0a0e);
+}
+
+.card-title {
+    font-weight: 600;
+    color: white;
+    letter-spacing: -0.02em;
+    line-height: 40px;
+    font-style: normal;
+    font-size: 28px;
+    padding-bottom: 8px;
+}
+
+.card-description {
+    font-weight: 600;
+    line-height: 32px;
+    color: hsla(0, 0%, 100%, 0.5);
+    font-size: 16px;
+    max-width: 470px;
+}
+
+.text {
+    margin-top: 50px;
+}
+
+.hoho {
+    font-size: 50px;
+    margin-left: 475px;
+    margin-bottom: 30px;
+}
+
+
+.footer {
+    padding: 30px 0;
+    border-top: 1px solid #fff;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    img {
+        height: 0px;
+        width: 0px;
+    }
+    .hoho{
+        margin-left: 53px;
+        margin-bottom: 0px;
+        font-size: 24px;
+    }
+    .nav-item{margin-right: 16px;}
+}
